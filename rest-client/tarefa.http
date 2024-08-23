@@ -1,0 +1,8 @@
+POST http://localhost:3000/tarefas/
+Content-type: application/json
+
+{
+    "titulo": "Titulo massa"
+}
+
+// extenção: rest client
