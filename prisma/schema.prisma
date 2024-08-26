@@ -18,3 +18,9 @@ model Tarefa {
   dataCriacao     DateTime @default(now())
   dataAtualizacao DateTime @updatedAt
 }
+
+model Usuario{
+  id              Int      @id @default(autoincrement())
+  apelido String @unique
+  senha String
+}

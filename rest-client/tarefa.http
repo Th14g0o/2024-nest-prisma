@@ -4,5 +4,22 @@ Content-type: application/json
 {
     "titulo": "Titulo massa"
 }
-
 // extenção: rest client
+
+###
+POST http://localhost:3000/autenticacao/login
+Content-type: application/json
+
+{
+    "login": "leonardo",
+    "senha": "123"
+}
+
+###
+POST http://localhost:3000/autenticacao/login
+Content-type: application/json
+
+{
+    "login": "leonardo",
+    "senha": "321"
+}

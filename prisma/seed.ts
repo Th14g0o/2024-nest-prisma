@@ -1,4 +1,5 @@
 import { PrismaClient } from '@prisma/client';
+import console = require('console');
 
 const prisma = new PrismaClient();
 
@@ -6,7 +7,7 @@ const seed = async () => {
     await prisma.tarefa.deleteMany({});
 
     const tarefa = await prisma.tarefa.create({
-        data:{
+        data: {
             titulo: 'Tarefa unica',
         }
     });
@@ -32,6 +33,15 @@ const seed = async () => {
     });
 
     console.log(tarefas);
+
+    prisma.usuario.createManyAndReturn({
+        data: [
+            {apelido: 'leonardo', senha: '123'},
+            {apelido: 'minora', senha: '1234'},
+        ]
+    })
+    .then((usuarios) => console.log(usuarios))
+    .catch((error) => console.log(error));
 };
 
 seed()
