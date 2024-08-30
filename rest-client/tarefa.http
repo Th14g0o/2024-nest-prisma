@@ -23,3 +23,14 @@ Content-type: application/json
     "login": "leonardo",
     "senha": "321"
 }
+
+###
+GET http://localhost:3000/autenticacao/profile
+
+###
+GET http://localhost:3000/autenticacao/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjoxLCJpYXQiOjE3MjUwNDQxMDEsImV4cCI6MTcyNTA0NDQwMX0.XViWtaTU-LAMd7IkOtoyhqS3se5seJDQ6fBGph0Suvw
+
+###
+GET http://localhost:3000/autenticacao/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjoxLCJpYXQiOjE3MjUwNDQxMDEsImV4cCI6MTcyNTA0NDQwMX0.XViWtaTU-LAMd7IkOtoyhqS3se5seJDQ6fBGph0Suv
